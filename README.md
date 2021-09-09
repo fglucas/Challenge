@@ -1,7 +1,7 @@
  # Challenge
  
  
- ## PONTO E VIRGULA
+ ## PONTO E VIRGULA 
 Nome dos Alunos:
 - Bianca Nunes Ferraz Cabral
 - Lennyk Macedo dos Santos
@@ -9,12 +9,11 @@ Nome dos Alunos:
 - Micaela Mota Santos
 - Nalita Tsu Kao
 
-
-## Nome do projeto - SkinSight
-
 **Turma:2TDSG**
 
 **Ano:2021**
+
+## Nome do projeto - SkinSight
 
 ## Objetivo / descrição do Projeto
 
