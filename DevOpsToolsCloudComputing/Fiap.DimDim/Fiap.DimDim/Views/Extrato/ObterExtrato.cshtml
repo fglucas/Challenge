@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Fiap.DimDim.Models.Ted>
+
+@{
+    ViewData["Title"] = "ObterExtrato";
+}
+
+<h1>ObterExtrato</h1>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeBanco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FavorecidoAgencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FavorecidoConta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FavorecidoNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FavorecidoDocumento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeBanco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FavorecidoAgencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FavorecidoConta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FavorecidoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FavorecidoDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacao)
+            </td>
+            <td>
+                <a asp-action="AtualizarTed" asp-route-id="@item.TedId">Edit</a> |
+                <a asp-action="DetalhesTed" asp-route-id="@item.TedId">Details</a> |
+                <a asp-action="ExcluirTed" asp-route-id="@item.TedId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<a href="/Home/Logado" title="Logado" class="btn btn-dark col-md-3">
+    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+    Sair
+</a>

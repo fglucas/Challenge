@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Fiap.DimDim.Models.ContaBancaria>
+@{
+    ViewData["Title"] = "CadastrarConta";
+}
+
+<h1>CadastrarConta</h1>
+
+<form method="get" style="max-width:800px;">
+    <input type="text" name="agencia" value="Agencia: 0001" />
+    <input type="text" name="numero" value="Numero da Conta: 12345" />
+    <input type="text" name="tipo" value="Tipo de conta: CC" />
+    <input type="datetime" name="criadoEm" value="Criado: @DateTime.Now" />
+    <a href="/Home/Index" title="Sair" class="btn btn-dark col-md-3 mt-5">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        Sair
+    </a>
+</form>

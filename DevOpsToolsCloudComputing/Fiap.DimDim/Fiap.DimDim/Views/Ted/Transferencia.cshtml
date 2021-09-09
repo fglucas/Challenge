@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Transferencia";
+}
+
+<h1>Transferencia</h1>
+
+<form method="post">
+    <input type="text" name="valor" value="" class="form-control mt-4" placeholder="Valor" />
+    <input type="text" name="nomebanco" value="" class="form-control mt-4" placeholder="Nome Banco" />
+    <input type="text" name="favorecidoagencia" value="" class="form-control mt-4" placeholder="Favorecido Agencia" />
+    <input type="text" name="favorecidoconta" value="" class="form-control mt-4" placeholder="Favorecido Conta" />
+    <input type="text" name="favorecidonome" value="" class="form-control mt-4" placeholder="Favorecido Nome" />
+    <input type="text" name="favorecidodocumento" value="" class="form-control mt-4" placeholder="Favorecido Documento" />
+    <input type="text" name="observacao" value="" class="form-control mt-4" placeholder="Observação" />
+    <input type="submit" value="Realizar Transferencia" class="btn btn-lg btn-outline-warning btn-block mt-3 mb-2" />
+    <a href="/Home/Logado" title="Logado" class="btn btn-lg btn-dark col-md-3">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        Sair
+    </a>
+</form>
